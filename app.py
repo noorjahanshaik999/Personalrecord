@@ -256,7 +256,7 @@ def createpassword():
             mydb.commit()
             flash('Password changed successfully')
             return redirect(url_for('login'))
-            else:
+        else:
             flash('New password and confirm passwords should be same')
             return render_template('newpassword.html')
     return render_template('newpassword.html')
